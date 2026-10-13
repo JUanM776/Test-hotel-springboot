@@ -22,5 +22,8 @@ class ReservaCancelarTest {
 
         assertEquals(EstadoReserva.CANCELADA, reserva.getEstado());
         assertEquals(EstadoHabitacion.DISPONIBLE, habitacion.getEstado());
+        reserva.cancelar();
+        assertEquals(EstadoReserva.CANCELADA, reserva.getEstado());
+        assertEquals(EstadoHabitacion.DISPONIBLE, habitacion.getEstado());
     }
 }
